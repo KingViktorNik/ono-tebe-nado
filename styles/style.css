@@ -1,1 +1,93 @@
-/* место для вашего кода */
+.page {
+  padding: 92px 24px 88px;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+
+  /* Временный контур */
+
+  border: 1px solid rgba(255, 0, 0, 0.2);
+}
+
+.header {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* Временный фон */
+
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Временное, центральная линия шапки */
+
+.header:after {
+  content: "";
+  width: 1px;
+  height: 1000px;
+  left: 50%;
+  top: 0;
+  position: absolute;
+  background: rgba(255, 0, 0, 0.2);
+}
+
+.menu {
+  list-style: circle;
+}
+
+.header__menu {
+  padding-left: 26.52px;
+}
+
+.header__links-list {
+  display: flex;
+  gap: 0 28px;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__link {
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+}
+
+.header__link_active {
+  border-bottom-color: transparent;
+}
+
+.logo {
+  font-size: 0;
+}
+
+.header__logo {
+  padding-right: 165px;
+}
+
+.header__logo-image {
+  margin: 0;
+  padding: 0;
+  height: 104.65px;
+}
+
+.address {
+  font-style: normal;
+}
+
+.address__link {
+  text-decoration: none;
+  font-style: normal;
+}
+
+.address__link > span {
+  border-bottom: 1px solid #000;
+}
+
+
+.header__address {
+  display: flex;
+  flex-direction: column;
+  max-width: 240.52px;
+}
