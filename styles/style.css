@@ -1,5 +1,5 @@
 .page {
-  padding: 92px 24px 88px;
+  padding: 91px 0 88px;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -10,10 +10,11 @@
 }
 
 .header {
-  padding: 0;
+  padding-inline: 25px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-inline: 24px;
 
   /* Временный фон */
 
@@ -34,15 +35,16 @@
 
 .menu {
   list-style: circle;
+  text-transform: lowercase;
 }
 
 .header__menu {
-  padding-left: 26.52px;
+  padding-top: 3px;
 }
 
 .header__links-list {
   display: flex;
-  gap: 0 28px;
+  gap: 0 34px;
 }
 
 .header__links-list-item_no-bullit {
@@ -63,17 +65,19 @@
 }
 
 .header__logo {
-  padding-right: 165px;
+  margin-right: 150px;
 }
 
 .header__logo-image {
   margin: 0;
   padding: 0;
-  height: 104.65px;
+  height: 105px;
 }
 
 .address {
   font-style: normal;
+  line-height: 1.35;
+  padding-block-start: 5px;
 }
 
 .address__link {
@@ -85,9 +89,8 @@
   border-bottom: 1px solid #000;
 }
 
-
 .header__address {
   display: flex;
   flex-direction: column;
-  max-width: 240.52px;
+  width: 239px;
 }
