@@ -55,12 +55,12 @@
 }
 
 .header__link {
-  text-decoration: none;
-  border-bottom: 1px solid #000;
+  text-decoration-color: #000;
+  text-underline-offset: 4px;
 }
 
 .header__link_active {
-  border-bottom-color: transparent;
+  text-decoration-color: transparent;
 }
 
 .logo {
@@ -84,12 +84,8 @@
 }
 
 .address__link {
-  text-decoration: none;
   font-style: normal;
-}
-
-.address__link > span {
-  border-bottom: 1px solid #000;
+  text-underline-offset: 3.5px;
 }
 
 .header__address {
@@ -101,7 +97,6 @@
 /* main */
 
 .main {
-
 }
 
 .cover {
@@ -109,14 +104,14 @@
   min-height: 757px;
   position: relative;
   background: #00f url(../images/cover.jpg) no-repeat center / cover;
-  z-index: 0;
 }
 
 .cover__title {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  z-index: 1;
+  position: relative;
+  z-index: 2;
   padding: 164px 19px 0 50px;
   color: #fff;
   font-size: 100px;
@@ -151,7 +146,39 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  z-index: -1;
+  z-index: 1;
+}
+
+.cover__description {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0 78px;
+  margin-block-start: 134px;
+  margin-inline-end: 49px;
+  position: relative;
+  z-index: 3;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.cover__description-text {
+  word-spacing: 18.5px;
+}
+
+.bet-button {
+  background-color: transparent;
+  width: 256px;
+  height: 51px;
+  font-size: inherit;
+  text-transform: inherit;
+  color: inherit;
+  border: 1px solid #fff;
+}
+
+.bet-button:hover {
+  cursor: pointer;
 }
 
 /* footer */
