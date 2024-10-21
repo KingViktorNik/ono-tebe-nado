@@ -95,7 +95,6 @@
 .address {
   font-style: normal;
   line-height: 1.35;
-  padding-block-start: 5px;
 }
 
 .address__link {
@@ -302,3 +301,37 @@
 }
 
 /* footer */
+
+.footer {
+  display: flex;
+  margin: 179px 50px 0;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.footer__menu-list {
+  list-style: none;
+  text-align: center;
+}
+
+.footer__menu-link {
+  height: 98px;
+  line-height: 22px;
+  text-decoration: underline 1px solid inherit;
+  text-underline-offset: 4px;
+}
+
+.footer__menu-link_active {
+  text-decoration-color: transparent;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-content: space-between;
+  min-width: 240px;
+  list-style: none;
+}
+
+.footer__social-icon {
+  height: 48px;
+}
