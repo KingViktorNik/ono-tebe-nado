@@ -1,1 +1,1 @@
-https://github.com/KingViktorNik/ono-tebe-nado
+https://github.com/KingViktorNik/ono-tebe-nado 
