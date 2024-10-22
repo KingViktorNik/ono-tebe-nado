@@ -3,6 +3,11 @@
   text-transform: uppercase;
 }
 
+.address {
+  font-style: normal;
+  line-height: 1.35;
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -18,10 +23,6 @@
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 400;
-
-  /* Временный контур */
-
-  border: 1px solid rgba(255, 0, 0, 0.2);
 }
 
 /* header */
@@ -32,28 +33,6 @@
   align-items: center;
   justify-content: space-between;
   margin-inline: 24px;
-
-  /* Временный фон */
-
-  /* background-color: rgba(0, 0, 0, 0.1); */
-}
-
-/* Временное, центральная линия шапки */
-
-.header:after {
-  content: "";
-  width: 1px;
-  height: 3000px;
-  left: 50%;
-  top: 0;
-  position: absolute;
-  background: rgba(255, 0, 0, 0.2);
-  z-index: 9;
-}
-
-.menu {
-  list-style: circle;
-  text-transform: lowercase;
 }
 
 .header__menu {
@@ -63,6 +42,8 @@
 .header__links-list {
   display: flex;
   gap: 0 34px;
+  list-style: circle;
+  text-transform: lowercase;
 }
 
 .header__links-list-item_no-bullit {
@@ -78,23 +59,13 @@
   text-decoration-color: transparent;
 }
 
-.logo {
+.header__logo {
+  margin-right: 150px;
   font-size: 0;
 }
 
-.header__logo {
-  margin-right: 150px;
-}
-
 .header__logo-image {
-  margin: 0;
-  padding: 0;
   height: 105px;
-}
-
-.address {
-  font-style: normal;
-  line-height: 1.35;
 }
 
 .address__link {
@@ -113,9 +84,9 @@
 /* Входная секция */
 
 .cover {
+  position: relative;
   margin-block-start: 96px;
   min-height: 757px;
-  position: relative;
   background: #00f url(../images/cover.jpg) no-repeat center / cover;
 }
 
@@ -130,7 +101,6 @@
   font-size: 100px;
   font-weight: bolder;
   text-transform: uppercase;
-  text-indent: ellipsis;
 }
 
 .aligned-text {
@@ -195,16 +165,18 @@
 }
 
 .lots__card-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   margin-block-start: 28px;
-  gap: 0 25px;
-  min-height: 563px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
 }
 
 .lots__card-list-item {
   position: relative;
+  flex-grow: 1;
   list-style: none;
+  max-width: 334px;
 }
 
 .card-link {
@@ -216,7 +188,7 @@
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
-  padding: 50px 40px 50px;
+  padding: 51px 40px 48px;
   color: #fff;
 }
 
@@ -250,8 +222,8 @@
 .lots__look-more-link {
   font-size: 20px;
   display: block;
-  margin: 30px 40px 0;
-  text-decoration: underline 1px solid inherit;
+  margin: 31px 40px 0;
+  text-decoration: underline 1px solid;
   text-underline-offset: 4px;
 }
 
@@ -317,7 +289,7 @@
 .footer__menu-link {
   height: 98px;
   line-height: 22px;
-  text-decoration: underline 1px solid inherit;
+  text-decoration: underline 1px solid;
   text-underline-offset: 4px;
 }
 
